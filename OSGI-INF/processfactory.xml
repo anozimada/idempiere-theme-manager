@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE scr:component>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.anozimada.theme.ProcessFactory">
+   <implementation class="com.anozimada.theme.factory.ProcessFactory"/>
+   <property name="service.ranking" type="Integer" value="10"/>
+   <service>
+      <provide interface="org.adempiere.base.IProcessFactory"/>
+   </service>
+</scr:component>

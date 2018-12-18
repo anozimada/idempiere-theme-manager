@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iDempiere Theme Manager
+Bundle-SymbolicName: com.anozimada.idempiere.theme;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: Anozi Mada
+Automatic-Module-Name: com.anozimada.idempiere.theme
+Require-Bundle: org.adempiere.plugin.utils,
+ org.adempiere.base,
+ zk,
+ zul,
+ org.adempiere.ui.zk
+Service-Component: OSGI-INF/*.xml
+Bundle-Activator: org.adempiere.plugin.utils.AdempiereActivator
+Export-Package: com.anozimada.theme.factory,
+ com.anozimada.theme.model,
+ com.anozimada.theme.process
+Bundle-ActivationPolicy: lazy
